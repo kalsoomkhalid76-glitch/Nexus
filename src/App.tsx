@@ -31,6 +31,7 @@ import { DealsPage } from './pages/deals/DealsPage';
 import { ChatPage } from './pages/chat/ChatPage';
 import CalendarPage from './pages/CalendarPage';
 import VideoCallPage from './pages/VideoCallPage';
+import DocumentChamber from './pages/DocumentChamber ';
 function App() {
   return (
     <AuthProvider>
@@ -95,6 +96,9 @@ function App() {
           </Route>
           <Route path="/videocall" element={<DashboardLayout />}>
            <Route index element={<VideoCallPage />} />
+          </Route>
+          <Route path="/documentchamber" element={<DashboardLayout />}>
+           <Route index element={<DocumentChamber />} />
           </Route>
           {/* Redirect root to login */}
           <Route path="/" element={<Navigate to="/login" replace />} />

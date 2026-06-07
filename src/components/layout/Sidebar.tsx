@@ -45,6 +45,7 @@ export const Sidebar: React.FC = () => {
     { to: '/documents', icon: <FileText size={20} />, text: 'Documents' },
     { to: '/calendar', icon: <Calendar size={20} />, text: 'Calendar' },
     { to: '/videocall', icon: <Video size={20} />, text:'Video Call'},
+    { to: '/documentchamber', icon: <FileText size={20} />, text: 'Doc Chamber'},
   ];
   
   const investorItems = [
@@ -56,7 +57,7 @@ export const Sidebar: React.FC = () => {
     { to: '/deals', icon: <FileText size={20} />, text: 'Deals' },
     { to: '/calendar', icon: <Calendar size={20} />, text: 'Calendar' },
     { to: '/videocall', icon: <Video size={20} />, text: 'Video Call'},
-
+    { to: '/documentchamber', icon: <FileText size={20} />, text:'Doc Chamber'},
   ];
   
   const sidebarItems = user.role === 'entrepreneur' ? entrepreneurItems : investorItems;
