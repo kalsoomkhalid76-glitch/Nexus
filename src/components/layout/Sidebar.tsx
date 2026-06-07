@@ -4,7 +4,7 @@ import { useAuth } from '../../context/AuthContext';
 import { 
   Home, Building2, CircleDollarSign, Users, MessageCircle, 
   Bell, FileText, Settings, HelpCircle, Calendar,Video,
-  DollarSign
+  DollarSign,Shield
 } from 'lucide-react';
 
 interface SidebarItemProps {
@@ -48,7 +48,7 @@ export const Sidebar: React.FC = () => {
     { to: '/videocall', icon: <Video size={20} />, text:'Video Call'},
     { to: '/documentchamber', icon: <FileText size={20} />, text: 'Doc Chamber'},
     { to: '/payment',icon: <DollarSign size={20} />, text: 'Payments'},
-  ];
+    { to: '/security', icon: <Shield size={20} />, text: 'Security'},];
   
   const investorItems = [
     { to: '/dashboard/investor', icon: <Home size={20} />, text: 'Dashboard' },

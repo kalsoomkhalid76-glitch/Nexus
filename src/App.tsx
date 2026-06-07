@@ -33,6 +33,7 @@ import CalendarPage from './pages/CalendarPage';
 import VideoCallPage from './pages/VideoCallPage';
 import DocumentChamber from './pages/DocumentChamber';
 import PaymentPage from './pages/PaymentPage';
+import SecurityPage from './pages/SecurityPage';
 function App() {
   return (
     <AuthProvider>
@@ -103,6 +104,8 @@ function App() {
           </Route>
           <Route path="/payment" element={<DashboardLayout />}>
           <Route index element={<PaymentPage />} /></Route>
+          <Route path="/security" element={<DashboardLayout />}>
+          <Route index element={<SecurityPage />} /></Route>
           {/* Redirect root to login */}
           <Route path="/" element={<Navigate to="/login" replace />} />
           
