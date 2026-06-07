@@ -31,7 +31,8 @@ import { DealsPage } from './pages/deals/DealsPage';
 import { ChatPage } from './pages/chat/ChatPage';
 import CalendarPage from './pages/CalendarPage';
 import VideoCallPage from './pages/VideoCallPage';
-import DocumentChamber from './pages/DocumentChamber ';
+import DocumentChamber from './pages/DocumentChamber';
+import PaymentPage from './pages/PaymentPage';
 function App() {
   return (
     <AuthProvider>
@@ -100,6 +101,8 @@ function App() {
           <Route path="/documentchamber" element={<DashboardLayout />}>
            <Route index element={<DocumentChamber />} />
           </Route>
+          <Route path="/payment" element={<DashboardLayout />}>
+          <Route index element={<PaymentPage />} /></Route>
           {/* Redirect root to login */}
           <Route path="/" element={<Navigate to="/login" replace />} />
           
