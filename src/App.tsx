@@ -30,7 +30,7 @@ import { DealsPage } from './pages/deals/DealsPage';
 // Chat Pages
 import { ChatPage } from './pages/chat/ChatPage';
 import CalendarPage from './pages/CalendarPage';
-
+import VideoCallPage from './pages/VideoCallPage';
 function App() {
   return (
     <AuthProvider>
@@ -93,7 +93,9 @@ function App() {
           <Route path="/calendar" element={<DashboardLayout />}>
           <Route index element={<CalendarPage />} />
           </Route>
-          
+          <Route path="/videocall" element={<DashboardLayout />}>
+           <Route index element={<VideoCallPage />} />
+          </Route>
           {/* Redirect root to login */}
           <Route path="/" element={<Navigate to="/login" replace />} />
           
